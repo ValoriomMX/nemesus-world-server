@@ -19,7 +19,7 @@
     "vue-ellipse-progress": "^1.3.0",
     "vue-loader": "^17.4.2",
     "vue-progress": "^0.2.1",
-    "vue-range-component": "Anoesj/vue-range-slider#master",
+    "vue-range-slider": "^0.6.0",
     "vue-scrollto": "^2.20.0",
     "vue-toastification": "^1.7.14",
     "xhr2": "^0.2.1"
