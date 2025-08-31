@@ -21,7 +21,7 @@
                                             </div>
                                             <div class="card2 card card-primary card-outline text-center">
                                                 <div class="settext ml-2" style="cursor:pointer" v-on:click="selectMoebel(-2)">
-                                                    Zurück
+                                                    Atrás
                                                 </div>
                                             </div>
                                         </div>
@@ -34,7 +34,7 @@
                                             </div>
                                             <div class="card2 card card-primary card-outline text-center">
                                                 <div class="settext ml-2" style="cursor:pointer" v-on:click="selectMoebel(-2)">
-                                                    Zurück
+                                                    Atrás
                                                 </div>
                                             </div>
                                         </div>
@@ -68,7 +68,7 @@
                                             </div>
                                             <div class="card2 card card-primary card-outline text-center">
                                                 <div class="settext ml-2" style="cursor:pointer" v-on:click="selectMoebel(-1)">
-                                                    Zurück
+                                                    Atrás
                                                 </div>
                                             </div>
                                         </div>
@@ -106,7 +106,7 @@
                                             </div>
                                             <div class="card2 card card-primary card-outline text-center">
                                                 <div class="settext ml-2" style="cursor:pointer" v-on:click="selectCategorie(-2)">
-                                                    Zurück
+                                                    Atrás
                                                 </div>
                                             </div>
                                         </div>
@@ -134,17 +134,17 @@
                                         <div class="col-md-12">
                                             <div class="card2 card card-primary card-outline text-center">
                                                 <div class="settext ml-2" style="cursor:pointer" v-on:click="newMoebel()">
-                                                    Neue Möbel aufstellen
+                                                    Colocar nuevos muebles
                                                 </div>
                                             </div>
                                             <div class="card2 card card-primary card-outline text-center">
                                                 <div class="settext ml-2" style="cursor:pointer" v-on:click="moebelModus()">
-                                                    Möbelmodus ak/deaktivieren
+                                                    Activar/desactivar modo muebles
                                                 </div>
                                             </div>
                                             <div class="card2 card card-primary card-outline text-center">
                                                 <div class="settext ml-2" style="cursor:pointer" v-on:click="moveMoebel()">
-                                                    Möbel aufbauen/bewegen
+                                                    Construir/mover muebles
                                                 </div>
                                             </div>
                                             <div class="card2 card card-primary card-outline text-center">

@@ -120,8 +120,8 @@
                     </div>
                     <div class="icon3 text-center">
                         <i class="fas fa-clock" style="color:#3F6791;text-shadow: 0 0 2px #000;"><span
-                                class="ml-2 text-center" style="font-family: 'Exo', sans-serif;color:white">Zeit:
-                                {{ time }} Uhr</span></i>
+                                class="ml-2 text-center" style="font-family: 'Exo', sans-serif;color:white">Hora:
+                                {{ time }}</span></i>
                     </div>
                     <div class="iconnw icon3 text-center">
                         <i class="fas fa-map-marker-alt" style="color:#3F6791;text-shadow: 0 0 2px #000;"><span

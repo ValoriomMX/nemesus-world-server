@@ -31,14 +31,14 @@
                                     <li class="nav-item" v-if="faction == 1">
                                         <a class="nav-link">
                                             <a :class="[(selectMDC == 1 || selectMDC == 2 || selectMDC == 3) ? 'nav-link active':'']" style="color:white; font-family: 'Exo', sans-serif; font-size: 0.8vw" @click="selectMDC = 1">
-                                                Fahndungen
+                                                Búsquedas
                                             </a>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link">
-                                            <a :class="[(selectMDC == 8 || selectMDC == 9) ? 'nav-link active':'']" style="color:white; font-family: 'Exo', sans-serif; font-size: 0.8vw" @click="selectDispatches()">
-                                                Dispatches
+                                            <a :class="[(selectMDC == 8 || selectMDC == 9) ? 'nav-link active':'']" style="color:white; font-family: 'Exo', sans-serif; font-size: 0.8vw" @click="selectDespachos()">
+                                                Despachos
                                             </a>
                                         </a>
                                     </li>
@@ -121,7 +121,7 @@
                                                 <div class="info-box">
                                                     <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-user"></i></span>
                                                     <div class="info-box-content">
-                                                        <span class="info-box-text">Im Dienst</span>
+                                                        <span class="info-box-text">En servicio</span>
                                                         <span class="info-box-number">
                                                             {{otherInfo[1]}}
                                                         </span>
@@ -132,7 +132,7 @@
                                                 <div class="info-box">
                                                     <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-ban"></i></span>
                                                     <div class="info-box-content">
-                                                        <span class="info-box-text">Fahndungen</span>
+                                                        <span class="info-box-text">Búsquedas</span>
                                                         <span class="info-box-number">
                                                             {{otherInfo[2]}}
                                                         </span>
@@ -143,7 +143,7 @@
                                                 <div class="info-box">
                                                     <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-file-alt"></i></span>
                                                     <div class="info-box-content">
-                                                        <span class="info-box-text">Dispatches</span>
+                                                        <span class="info-box-text">Despachos</span>
                                                         <span class="info-box-number">
                                                             {{otherInfo[3]}}
                                                         </span>
@@ -154,7 +154,7 @@
                                         <div class="card" style="overflow-x: auto; height:100%" v-if="faction == 1">
                                             <div class="card-header border-transparent">
                                                 <h3 class="card-title" style="font-family: 'Exo', sans-serif; font-size: 0.8vw">Die letzten
-                                                    Fahndungen</h3>
+                                                    Búsquedas</h3>
                                             </div>
                                             <div class="card-body p-0" style="height: 18.5vw">
                                                 <div class="table-responsive">
@@ -183,7 +183,7 @@
                                         </div>
                                         <div class="card" style="overflow-x: auto; height:100%" v-if="faction == 2 || faction == 3">
                                             <div class="card-header border-transparent">
-                                                <h3 class="card-title" style="font-family: 'Exo', sans-serif; font-size: 0.8vw">Die letzten Dispatches</h3>
+                                                <h3 class="card-title" style="font-family: 'Exo', sans-serif; font-size: 0.8vw">Die letzten Despachos</h3>
                                             </div>
                                             <div class="card-body p-0" style="height: 18.5vw">
                                                 <div class="table-responsive">
@@ -221,11 +221,11 @@
                                         <div class="card-footer clearfix" v-if="faction == 1">
                                             <a href="javascript:void(0)" class="btn btn-sm btn-primary float-left" @click="navigate('createFahndung')">Neue Fahndung
                                                 erstellen</a>
-                                            <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right" @click="navigate('showFahndungen')">Alle Fahndungen
+                                            <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right" @click="navigate('showBúsquedas')">Alle Búsquedas
                                                 einsehen</a>
                                         </div>
                                         <div class="card-footer clearfix" v-if="faction == 2 || faction == 3">
-                                            <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right" @click="selectDispatches()">Alle Dispatches
+                                            <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right" @click="selectDespachos()">Alle Despachos
                                                 einsehen</a>
                                         </div>
                                     </div>
@@ -628,19 +628,19 @@
                                                         </a>
                                                     </li>
                                                     <li class="ml-5 mt-1">
-                                                        <b>Identifikationsnummer</b> <a class="float-right mr-5">
+                                                        <b>Número de identificación</b> <a class="float-right mr-5">
                                                             <div class="col-12 float-right">WEPN-{{weaponInfo.Screen}}
                                                             </div>
                                                         </a>
                                                     </li>
                                                     <li class="ml-5 mt-1">
-                                                        <b>Ausgestellt an</b> <a class="float-right mr-5">
+                                                        <b>Emitido a</b> <a class="float-right mr-5">
                                                             <div class="col-12 float-right">{{weaponInfo.name}}
                                                             </div>
                                                         </a>
                                                     </li>
                                                     <li class="ml-5 mt-1">
-                                                        <b>Ausgestellt von</b> <a class="float-right mr-5">
+                                                        <b>Emitido por</b> <a class="float-right mr-5">
                                                             <div class="col-12 float-right">{{weaponInfo.shop}}
                                                             </div>
                                                         </a>
@@ -669,19 +669,19 @@
                                             <div class="card-body p-0" style="height: 18.5vw">
                                                 <ul class="list-group list-group-bordered" style="font-size: 0.9vw">
                                                     <li class="ml-5 mt-5">
-                                                        <b>Fahrzeugname</b> <a class="float-right mr-5">
+                                                        <b>Nombre del vehículo</b> <a class="float-right mr-5">
                                                             <div class="col-12 float-right">{{plateInfo[0].Screen}}
                                                             </div>
                                                         </a>
                                                     </li>
                                                     <li class="ml-5 mt-1">
-                                                        <b>Identifikationsnummer</b> <a class="float-right mr-5">
+                                                        <b>Número de identificación</b> <a class="float-right mr-5">
                                                             <div class="col-12 float-right">VHCLE-{{plateInfo[0].Closed}}
                                                             </div>
                                                         </a>
                                                     </li>
                                                     <li class="ml-5 mt-1">
-                                                        <b>Besitzer</b> <a class="float-right mr-5">
+                                                        <b>Propietario</b> <a class="float-right mr-5">
                                                             <div class="col-12 float-right">{{plateInfo[0].Name}}
                                                             </div>
                                                         </a>
@@ -706,7 +706,7 @@
                                     <div class="card-body" style="height:100%" v-if="selectMDC == 8">
                                         <div class="card" style="overflow-x: auto; height:100%">
                                             <div class="card-header border-transparent">
-                                                <h3 class="card-title" style="font-family: 'Exo', sans-serif; font-size: 0.8vw">Dispatches
+                                                <h3 class="card-title" style="font-family: 'Exo', sans-serif; font-size: 0.8vw">Despachos
                                                 </h3>
                                             </div>
                                             <div class="card-body p-0" style="height: 18.5vw">
@@ -950,7 +950,7 @@
                                                     </li>
                                                     <li class="ml-5 mt-4" v-if="faction == 1">
                                                         <b>Waffenidentifikationsnummer suchen</b> <a class="float-right mr-5">
-                                                            <div class="col-12 float-right"><input type="text" maxlength="17" class="float-right form-control text-center" placeholder="Identifikationsnummer" style="border-radius: 1vw" v-model="weaponText" v-on:keyup.enter="locateWeapon(weaponText)">
+                                                            <div class="col-12 float-right"><input type="text" maxlength="17" class="float-right form-control text-center" placeholder="Número de identificación" style="border-radius: 1vw" v-model="weaponText" v-on:keyup.enter="locateWeapon(weaponText)">
                                                             </div>
                                                         </a>
                                                     </li>
@@ -1198,7 +1198,7 @@
                                                                                 <table class="table">
                                                                                     <thead>
                                                                                         <tr>
-                                                                                            <th>Fahrzeugname</th>
+                                                                                            <th>Nombre del vehículo</th>
                                                                                             <th>Kennzeichen</th>
                                                                                             <th>TÜV</th>
                                                                                         </tr>
@@ -1261,9 +1261,9 @@
                                                                                 <table class="table">
                                                                                     <thead>
                                                                                         <tr>
-                                                                                            <th>Identifikationsnummer</th>
+                                                                                            <th>Número de identificación</th>
                                                                                             <th>Waffenname</th>
-                                                                                            <th>Ausgestellt von</th>
+                                                                                            <th>Emitido por</th>
                                                                                             <th>Aktion</th>
                                                                                         </tr>
                                                                                     </thead>
@@ -1568,7 +1568,7 @@ export default {
             fahndungCreator: '',
             //Undercover
             undercoverText: '',
-            //Dispatches
+            //Despachos
             dispatchInfo: [],
             selectedDispatch: '',
             //Personen
@@ -2009,7 +2009,7 @@ export default {
                 this.$forceUpdate();
             }
         },
-        selectDispatches: function () {
+        selectDespachos: function () {
             if ((Date.now() / 1000) > this.clicked) {
                 this.searchelement = '';
                 this.selectMDC = 8;
@@ -2554,7 +2554,7 @@ export default {
                     this.fahndungText = '';
                     this.selectedDispatch = data;
                     this.selectMDC = 9;
-                } else if (navi == 'showFahndungen') {
+                } else if (navi == 'showBúsquedas') {
                     if ((Date.now() / 1000) > this.fahndungenLoaded) {
                         this.loadfahndungen();
                         this.fahndungenLoaded = (Date.now() / 1000) + (5);

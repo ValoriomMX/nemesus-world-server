@@ -306,16 +306,16 @@ export default {
                 ['Hautfarbe mischen', -1, 1, 0.1]
             ],
             faceFeatures: [
-                'Nasenbreite', 'Nasenhöhe', 'Nasenlänge', 'Nasenbreite Brücke', 'Nasenposition',
-                'Nasenrücken', 'Augenbrauenhöhe', 'Augenbrauenbreite', 'Gesässhöhe',
-                'Gesässbreite', 'Wangenbreite', 'Augen', 'Lippen', 'Wangenlänge', 'Wangenhöhe',
-                'Kinnlänge', 'Kinnposition', 'Bartbreite', 'Bartform', 'Nackenbreite',
+                'Ancho de nariz', 'Altura de nariz', 'Longitud de nariz', 'Ancho puente nasal', 'Posición de nariz',
+                'Dorso nasal', 'Altura de cejas', 'Ancho de cejas', 'Altura de mejillas',
+                'Ancho de mejillas', 'Ancho de pómulos', 'Ojos', 'Labios', 'Longitud de mejillas', 'Altura de mejillas',
+                'Longitud de barbilla', 'Posición de barbilla', 'Ancho de barba', 'Forma de barba', 'Ancho de cuello',
             ],
-            clothings: ['Oberbekleidung', 'Torso', 'Hose', 'Schuhe', 'T-Shirt'],
+            clothings: ['Ropa superior', 'Torso', 'Pantalones', 'Zapatos', 'Camiseta'],
             clothingMax: [maxOberbekleidungMen, maxTorsoMen, maxLegsMen, maxShoesMen, maxTShirtMen],
             clothingMaxWoman: [maxOberbekleidungWomen, maxTorsoWomen, maxLegsWomen, maxShoesWomen, maxTShirtWomen],
             hairMax: 80,
-            headOverlays: ['Schönheitsfehler', 'Augenbrauen', 'Altersflecken', 'Make-up', 'Rötung', 'Teint', 'Sonnenschaden', 'Lippenstift', 'Sommersprossen', 'Brustbehaarung', 'Hautunreinheiten', 'Körperunreinheiten'],
+            headOverlays: ['Defectos de belleza', 'Cejas', 'Manchas de edad', 'Maquillaje', 'Enrojecimiento', 'Tez', 'Daño solar', 'Lápiz labial', 'Pecas', 'Vello pectoral', 'Imperfecciones de la piel', 'Imperfecciones del cuerpo'],
             headOverlaysMax: [23, 33, 14, 74, 32, 11, 10, 9, 17, 16, 11, 1],
         }
     },

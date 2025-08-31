@@ -60,7 +60,7 @@
                                         <div class="card card-primary card-outline mr-2 ml-1" style="min-width: 150px !important;min-height: 125px !important">
                                             <div class="card-body">
                                                 <h3 class="profile-username text-center mb-4">
-                                                    <strong>Taxiauftrag</strong>
+                                                    <strong>Trabajo de Taxi</strong>
                                                 </h3>
                                                 <p class="text-muted text-center mt-2">
                                                     Wo: <strong>{{taxijob.from}}</strong></p>
@@ -69,7 +69,7 @@
                                                 <p class="text-muted text-center">
                                                     Gehalt: <strong style="color:green">~{{taxijob.money}}$</strong></p>
                                             </div>
-                                            <button type="button" class="btn btn-primary mr-3 ml-3 mb-2" @click="acceptTaxi(taxijob.id)">Annehmen</button>
+                                            <button type="button" class="btn btn-primary mr-3 ml-3 mb-2" @click="acceptTaxi(taxijob.id)">Aceptar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -98,7 +98,7 @@
                                                     Gehalt: <strong style="color:green">~{{parseInt(parseInt(order.dist)*0.325)}}$ +
                                                         (Bonus)</strong></p>
                                             </div>
-                                            <button type="button" class="btn btn-primary mr-3 ml-3 mb-2" @click="acceptOrder(order.id)">Annehmen</button>
+                                            <button type="button" class="btn btn-primary mr-3 ml-3 mb-2" @click="acceptOrder(order.id)">Aceptar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -145,12 +145,12 @@
                                                 <h3 class="profile-username text-center mt-3">
                                                     {{vehicle.name}}</h3>
                                                 <p class="text-muted text-center">
-                                                    Ladekapazität: {{vehicle.capa}}KG</p>
+                                                    Capacidad de carga: {{vehicle.capa}}KG</p>
                                                 <p class="text-muted text-center">
                                                     <b>Ab Skill:</b> <strong>{{vehicle.skilltext}}</strong>
                                                 </p>
                                             </div>
-                                            <button type="button" class="btn btn-primary mr-3 ml-3 mb-2" @click="selectVehicle(vehicle.id)">Auswählen</button>
+                                            <button type="button" class="btn btn-primary mr-3 ml-3 mb-2" @click="selectVehicle(vehicle.id)">Seleccionar</button>
                                         </div>
                                     </div>
                                 </div>

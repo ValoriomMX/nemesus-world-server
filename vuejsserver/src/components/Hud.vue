@@ -3907,8 +3907,8 @@ export default {
                 this.tutorialStadthalle = false;
                 let timerInterval = 15000;
                 Swal.fire({
-                    title: 'Willkommen!',
-                    html: 'Wir wünschen dir viel Spass auf Nemesus World! Solltest du Hilfe benötigen, drücke die F2 Taste, dort kannst du dann z.B dir die Ersten Schritte anschauen oder ein Support Ticket erstellen. Weitere Informationen findest du auf unserer Webseite unter https://nemesus-world.de oder bei uns im UCP auf https://ucp.nemesus-world.de! PS: Dieser Gamemode wurde von Nemesus.de entwickelt, alle zukünftigen Updates findest du im Nemesus World Server Github Repo!',
+                    title: '¡Bienvenido!',
+                    html: '¡Te deseamos mucha diversión en Nemesus World! Si necesitas ayuda, presiona la tecla F2, allí podrás ver los primeros pasos o crear un ticket de soporte. Más información en nuestro sitio web https://nemesus-world.de o en nuestro UCP https://ucp.nemesus-world.de! PD: Este gamemode fue desarrollado por Nemesus.de, todas las actualizaciones futuras las encontrarás en el repositorio de Github de Nemesus World Server!',
                     timer: 12000,
                     allowEscapeKey: false,
                     timerProgressBar: true,

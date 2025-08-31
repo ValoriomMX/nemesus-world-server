@@ -64,11 +64,11 @@
                             <h3 v-else class="text-center mt-3" style="font-size: 1vw">
                               {{item.itemname}}</h3>
                             <p class="text-muted text-center" v-if="shopname != 'Waffenkammer LSPD' && shopname != 'Lager LSRC' && shopname != 'Lager ACLS'" style="font-size: 0.7vw">
-                              Preis: {{item.itemprice}}$</p>
+                              Precio: {{item.itemprice}}$</p>
                             <p class="text-muted text-center" v-if="item.itemamount != -1" style="font-size: 0.7vw">
-                              Menge: {{item.itemamount}}/Stck</p>
+                              Cantidad: {{item.itemamount}}/Ud</p>
                             <p class="text-muted text-center" v-if="shopname == 'Waffenkammer LSPD' || shopname == 'Lager LSRC' || shopname == 'Lager ACLS'" style="font-size: 0.7vw">
-                              Menge: {{item.itemprice}}/Stck</p>
+                              Cantidad: {{item.itemprice}}/Ud</p>
                             <div style="display: flex; justify-content: center; align-items: center;margin-top:0.6vw">
                             <input
                               v-if="item.itemname != 'Pfandflasche' && item.itemname != 'Tankrechnung' && item.itemname != 'Smartphone' && item.itemname != 'Benzinkanister' && item.itemname != 'Handyvertrag'"

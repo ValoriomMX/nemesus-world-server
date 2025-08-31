@@ -9,8 +9,8 @@
                             <div class="card card-primary card-outline">
                                 <div class="card-body">
                                     <div>
-                                        <h5 style="font-family: 'Exo', sans-serif;">Hackwerkzeug</h5>
-                                        <strong style="margin-top: 1vw">Gerätecode wird gescannt...</strong>
+                                        <h5 style="font-family: 'Exo', sans-serif;">Herramienta de Hackeo</h5>
+                                        <strong style="margin-top: 1vw">Escaneando código del dispositivo...</strong>
                                         <div class="row text-center d-flex justify-content-center animate__animated animate__flash"
                                             style="margin-top: 1vw">
                                             <div class="numbericon mr-4" style="font-size: 1.5vw">{{terminalarray[0]}}
@@ -31,7 +31,7 @@
                                             style="background-color: black; padding: 0.5vw; height: 45vw; max-height:32vw; width: 42vw;">
                                             <span style="color:#4AF626" v-html="terminaltext"></span></div>
                                     </div>
-                                    <p class="float-right mt-2" style="font-family: 'Exo', sans-serif;">Hackwerkzeug
+                                    <p class="float-right mt-2" style="font-family: 'Exo', sans-serif;">Herramienta de Hackeo
                                         v.5.3</p>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@
                     <div class="col-md-12 mt-1 animate__animated animate__bounceInUp">
                         <div class="box box-default">
                             <div class="card card-primary card-outline">
-                                <div class="card-header" style="font-family: 'Exo', sans-serif;">Allgemeine Verwaltung
+                                <div class="card-header" style="font-family: 'Exo', sans-serif;">Administración General
                                     <button @click="govsetting = 2" type="button" class="btn btn-primary float-right"
                                         style="border-radius: 1vw;margin-left: 0.15vw"
                                         :class="[(govsetting == 2) ? 'btn btn-primary btn-sm':'btn btn-secondary btn-sm']">Sonstiges</button>
