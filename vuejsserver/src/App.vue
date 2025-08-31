@@ -89,6 +89,7 @@ export default {
 <style>
 @import './assets/adminlte/dist/css/adminlte.css';
 @import './assets/adminlte/plugins/fontawesome-free/css/all.css';
+@import './assets/css/gaming-theme.css';
 
 html,
 body,
@@ -98,6 +99,12 @@ body,
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
+}
+
+/* Override default body styling for gaming theme */
+body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
 }
 
 ::-webkit-scrollbar-thumb {

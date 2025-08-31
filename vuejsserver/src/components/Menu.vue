@@ -6,10 +6,10 @@
                 <div class="col-md-12">
                     <div class="col-md-12 mt-1 animate__animated animate__bounceInUp">
                         <div class="box box-default">
-                            <div class="card card-primary card-outline">
+                            <div class="card card-primary card-outline gaming-card">
                                 <div class="card-body">
                                     <div>
-                                        <h5 style="font-family: 'Exo', sans-serif;">Hackwerkzeug</h5>
+                                        <h5 class="gaming-title" style="font-family: 'Exo', sans-serif;">Hackwerkzeug</h5>
                                         <strong style="margin-top: 1vw">Gerätecode wird gescannt...</strong>
                                         <div class="row text-center d-flex justify-content-center animate__animated animate__flash"
                                             style="margin-top: 1vw">
@@ -46,17 +46,17 @@
                 <div class="col-md-12">
                     <div class="col-md-12 mt-1 animate__animated animate__bounceInUp">
                         <div class="box box-default">
-                            <div class="card card-primary card-outline">
-                                <div class="card-header" style="font-family: 'Exo', sans-serif;">Allgemeine Verwaltung
-                                    <button @click="govsetting = 2" type="button" class="btn btn-primary float-right"
-                                        style="border-radius: 1vw;margin-left: 0.15vw"
-                                        :class="[(govsetting == 2) ? 'btn btn-primary btn-sm':'btn btn-secondary btn-sm']">Sonstiges</button>
-                                    <button @click="govsetting = 1" type="button" class="btn btn-primary float-right"
-                                        style="border-radius: 1vw;margin-left: 0.15vw"
-                                        :class="[(govsetting == 1) ? 'btn btn-primary btn-sm':'btn btn-secondary btn-sm']">Budgets</button>
-                                    <button @click="govsetting = 0" type="button" class="btn btn-primary float-right"
-                                        style="border-radius: 1vw;margin-left: 0.15vw"
-                                        :class="[(govsetting == 0) ? 'btn btn-primary btn-sm':'btn btn-secondary btn-sm']">Steuern</button>
+                            <div class="card card-primary card-outline gaming-card">
+                                <div class="card-header gaming-title" style="font-family: 'Exo', sans-serif;">Allgemeine Verwaltung
+                                    <button @click="govsetting = 2" type="button" class="gaming-btn-secondary float-right"
+                                        style="border-radius: 8px;margin-left: 0.15vw"
+                                        :class="[(govsetting == 2) ? 'gaming-btn btn-sm':'gaming-btn-secondary btn-sm']">Sonstiges</button>
+                                    <button @click="govsetting = 1" type="button" class="gaming-btn-secondary float-right"
+                                        style="border-radius: 8px;margin-left: 0.15vw"
+                                        :class="[(govsetting == 1) ? 'gaming-btn btn-sm':'gaming-btn-secondary btn-sm']">Budgets</button>
+                                    <button @click="govsetting = 0" type="button" class="gaming-btn-secondary float-right"
+                                        style="border-radius: 8px;margin-left: 0.15vw"
+                                        :class="[(govsetting == 0) ? 'gaming-btn btn-sm':'gaming-btn-secondary btn-sm']">Steuern</button>
                                 </div>
                                 <div class="card-body" style="scrollbar-width: none;" v-if="govsetting == 0">
                                     <div>
@@ -65,7 +65,7 @@
                                         vieles mehr ...
                                         <hr />
                                         <strong style="margin-top: 1vw">Lohnsteuer (%)</strong>
-                                        <input type="text" class="form-control" placeholder="Steuer in Prozent"
+                                        <input type="text" class="gaming-input" placeholder="Steuer in Prozent"
                                             v-model="govvalues1[0]" maxlength="3" name="lohnsteuer" autocomplete="off">
                                         <br />
                                         <strong style="margin-top: 1vw">Gewerbesteuer (%)</strong>
@@ -82,7 +82,7 @@
                                             v-model="govvalues1[3]" maxlength="4" name="abschleppkosten"
                                             autocomplete="off">
                                         <br />
-                                        <button class="btn btn-block btn-primary btn-sm mb-1" type="submit"
+                                        <button class="gaming-btn btn-block btn-sm mb-1" type="submit"
                                             v-on:click="saveGov(1)">Speichern</button>
                                     </div>
                                 </div>

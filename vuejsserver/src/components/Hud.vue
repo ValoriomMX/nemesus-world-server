@@ -12,18 +12,18 @@
                 <div id="coords">X: 0.0, Y: 0.0, Z: 0.0</div>
             </div>
             <div class="info player">
-                <div class="money float-right mr-2" style="color:#4477ad">
+                <div class="money float-right mr-2 gaming-money" style="color: var(--accent-primary)">
                     <span>{{("00000000" + money).slice(-8)}}$</span>
                 </div>
                 <div id="status" style="font-size: 1.9vh;margin-top: 0.2vh !important">
                     <ul>
-                        <progress-bar class="float-right mr-2" style="width:3.5vh;padding-bottom: 0.4vh" type="circle" ref="healthbar" color="#e03a3a" strokeWidth="0.5" duration="2000" :options="options1">
+                        <progress-bar class="float-right mr-2" style="width:3.5vh;padding-bottom: 0.4vh" type="circle" ref="healthbar" color="#ff4444" strokeWidth="0.5" duration="2000" :options="options1">
                         </progress-bar>
-                        <progress-bar class="float-right mr-2" style="width:3.5vh;padding-bottom: 0.2vh" type="circle" ref="hungerbar" color="#e03a3a" strokeWidth="0.5" duration="2000" :options="options2">
+                        <progress-bar class="float-right mr-2" style="width:3.5vh;padding-bottom: 0.2vh" type="circle" ref="hungerbar" color="#ffaa00" strokeWidth="0.5" duration="2000" :options="options2">
                         </progress-bar>
-                        <progress-bar class="float-right mr-2" style="width:3.5vh;padding-bottom: 0.4vh" type="circle" ref="thirstbar" color="#e03a3a" strokeWidth="0.5" duration="2000" :options="options3">
+                        <progress-bar class="float-right mr-2" style="width:3.5vh;padding-bottom: 0.4vh" type="circle" ref="thirstbar" color="#00d4ff" strokeWidth="0.5" duration="2000" :options="options3">
                         </progress-bar>
-                        <progress-bar class="float-right mr-2" style="width:3.5vh;padding-bottom: 0.4vh" type="circle" ref="shieldbar" color="#e03a3a" strokeWidth="0.5" duration="2000" :options="options4">
+                        <progress-bar class="float-right mr-2" style="width:3.5vh;padding-bottom: 0.4vh" type="circle" ref="shieldbar" color="#00ff88" strokeWidth="0.5" duration="2000" :options="options4">
                         </progress-bar>
                     </ul>
                 </div>
@@ -35,8 +35,8 @@
             <div class="col-md-12 mt-1 animate__animated animate__bounceInUp">
                 <div class="col-md-12 mt-1">
                     <div class="box box-default">
-                        <div class="card card-primary card-outline">
-                            <div class="card-header" style="font-family: 'Exo', sans-serif;"><strong class="ml-2">Gefälschte
+                        <div class="card card-primary card-outline gaming-card">
+                            <div class="card-header gaming-title" style="font-family: 'Exo', sans-serif;"><strong class="ml-2">Gefälschte
                                     Staatsbürgerschaft</strong>
                                 <button type="button" @click="checkEinreise2()" class="btn btn-primary float-right" v-if="!einreisefinish">Dokument
                                     nehmen</button>
@@ -1702,11 +1702,11 @@ export default {
             shield: 25,
             health: 25,
             options1: {
-                color: '#e03a3a',
-                fill: 'rgba(0, 0, 0, 0.5)',
+                color: '#ff4444',
+                fill: 'rgba(10, 11, 13, 0.8)',
                 strokeWidth: 8.0,
                 warnings: false,
-                backgroundColor: '#302f2f',
+                backgroundColor: 'rgba(42, 43, 46, 0.9)',
                 svgStyle: {
                     width: '100%',
                     height: '100%'
@@ -1716,11 +1716,11 @@ export default {
                 }
             },
             options2: {
-                color: '#a8450c',
-                fill: 'rgba(0, 0, 0, 0.5)',
+                color: '#ffaa00',
+                fill: 'rgba(10, 11, 13, 0.8)',
                 strokeWidth: 7.0,
                 warnings: false,
-                backgroundColor: '#302f2f',
+                backgroundColor: 'rgba(42, 43, 46, 0.9)',
                 svgStyle: {
                     width: '100%',
                     height: '100%'
@@ -1730,11 +1730,11 @@ export default {
                 }
             },
             options3: {
-                color: '#0c6aa8',
-                fill: 'rgba(0, 0, 0, 0.5)',
+                color: '#00d4ff',
+                fill: 'rgba(10, 11, 13, 0.8)',
                 strokeWidth: 7.0,
                 warnings: false,
-                backgroundColor: '#302f2f',
+                backgroundColor: 'rgba(42, 43, 46, 0.9)',
                 svgStyle: {
                     width: '100%',
                     height: '100%'
@@ -1744,11 +1744,11 @@ export default {
                 }
             },
             options4: {
-                color: '#75787d',
-                fill: 'rgba(0, 0, 0, 0.5)',
+                color: '#00ff88',
+                fill: 'rgba(10, 11, 13, 0.8)',
                 strokeWidth: 7.0,
                 warnings: false,
-                backgroundColor: '#302f2f',
+                backgroundColor: 'rgba(42, 43, 46, 0.9)',
                 svgStyle: {
                     width: '100%',
                     height: '100%'
@@ -4351,10 +4351,24 @@ template,
 
 .money {
     font-size: 3.51vh;
-    font-weight: 450;
+    font-weight: 600;
     font-family: 'Exo', sans-serif;
     z-index: -1;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.6), 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.3s ease;
+}
+
+.gaming-money {
+    background: rgba(42, 43, 46, 0.9);
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-primary);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
 }
 
 .progressbar.text {
