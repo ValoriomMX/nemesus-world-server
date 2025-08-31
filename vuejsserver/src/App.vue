@@ -89,6 +89,13 @@ export default {
 <style>
 @import './assets/adminlte/dist/css/adminlte.css';
 @import './assets/adminlte/plugins/fontawesome-free/css/all.css';
+@import './assets/css/main.css';
+
+#app {
+    background: var(--primary-bg);
+    min-height: 100vh;
+    font-family: 'Rajdhani', sans-serif;
+}
 
 html,
 body,
@@ -100,34 +107,39 @@ body,
     user-select: none;
 }
 
+/* Gaming Scrollbars */
 ::-webkit-scrollbar-thumb {
-    background-color: #a9a9a9;
+    background: var(--gradient-accent);
+    border-radius: var(--radius-md);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-blue);
 }
 
 ::-webkit-scrollbar-track {
-    background-color: transparent;
+    background: var(--secondary-bg);
+    border-radius: var(--radius-md);
 }
 
 ::-webkit-scrollbar-corner {
-    background-color: transparent;
+    background: transparent;
 }
 
 ::-webkit-scrollbar {
-    width: 0;
-}
-
-::-webkit-scrollbar {
-    width: .1rem;
-    height: .1rem;
+    width: 8px;
+    height: 8px;
 }
 
 body {
-    background: transparent;
+    background: var(--primary-bg);
     margin: 0;
     height: 100vh;
     overflow: hidden;
+    color: var(--text-primary);
 }
 
+/* Gaming Effects */
 @keyframes firework {
     0% {
         transform: translate(var(--x), var(--initialY));
@@ -144,5 +156,46 @@ body {
         width: var(--finalSize);
         opacity: 0;
     }
+}
+
+@keyframes glow-pulse {
+    0%, 100% {
+        box-shadow: 0 0 5px var(--accent-blue);
+    }
+    50% {
+        box-shadow: 0 0 20px var(--accent-blue), 0 0 30px var(--accent-blue);
+    }
+}
+
+/* Gaming Card Animations */
+@keyframes card-hover {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        transform: translateY(-10px) scale(1.02);
+    }
+}
+
+/* Override AdminLTE dark mode with gaming theme */
+.dark-mode {
+    background: var(--primary-bg) !important;
+    color: var(--text-primary) !important;
+}
+
+.dark-mode .card {
+    background: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+}
+
+.dark-mode .btn-primary {
+    background: var(--gradient-primary) !important;
+    border: none !important;
+}
+
+.dark-mode .btn-primary:hover {
+    background: var(--gradient-accent) !important;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
 }
 </style>

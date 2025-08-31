@@ -1458,8 +1458,8 @@ import VueProgress from 'vue-progress';
 import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
 import Swal from 'sweetalert2/dist/sweetalert2.js'
-import 'vue-range-component/dist/vue-range-slider.css'
-import VueRangeSlider from 'vue-range-component'
+import 'vue-range-slider/dist/vue-range-slider.css'
+import VueRangeSlider from 'vue-range-slider'
 import {
     maxShoesMen,
     maxShoesWomen,
