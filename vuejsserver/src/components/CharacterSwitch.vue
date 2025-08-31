@@ -6,10 +6,10 @@
                 <div class="col-md-12">
                     <div class="box box-default">
                         <div class="card card-primary card-outline">
-                            <div class="card-header" style="font-family: 'Exo', sans-serif;">Charakterauswahl
-                                <button type="button" @click="createNewCharacter()" class="btn btn-primary float-right">Neuen
-                                    Charakter
-                                    erstellen</button>
+                            <div class="card-header" style="font-family: 'Exo', sans-serif;">Selección de Personaje
+                                <button type="button" @click="createNewCharacter()" class="btn btn-primary float-right">Crear
+                                    Nuevo
+                                    Personaje</button>
                             </div>
                             <div class="card-body" style="min-width: 250px !important" v-if="count > 0">
                                 <div class="row">
@@ -35,9 +35,9 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <button @click="selectCharacter(character.ID)" type="button" class="btn btn-danger mr-3 ml-3 mb-2" disabled v-if="character.Closed == 1">Auswählen</button>
-                                            <button @click="selectCharacter(character.ID)" type="button" class="btn btn-primary mr-3 ml-3 mb-2" v-if="index == 0" v-on:keyup.enter="selectCharacter(character.ID)">Auswählen</button>
-                                            <button @click="selectCharacter(character.ID)" type="button" class="btn btn-primary mr-3 ml-3 mb-2" v-else>Auswählen</button>
+                                            <button @click="selectCharacter(character.ID)" type="button" class="btn btn-danger mr-3 ml-3 mb-2" disabled v-if="character.Closed == 1">Seleccionar</button>
+                                            <button @click="selectCharacter(character.ID)" type="button" class="btn btn-primary mr-3 ml-3 mb-2" v-if="index == 0" v-on:keyup.enter="selectCharacter(character.ID)">Seleccionar</button>
+                                            <button @click="selectCharacter(character.ID)" type="button" class="btn btn-primary mr-3 ml-3 mb-2" v-else>Seleccionar</button>
                                             <button @click="deleteCharacter(character.ID)" type="button" class="btn btn-danger mr-3 ml-3 mb-2" v-if="character.Closed == 0">Löschen</button>
                                         </div>
                                     </div>
@@ -67,7 +67,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <button type="button" class="btn btn-primary mr-2 ml-2 mb-2" disabled>Auswählen</button>
+                                            <button type="button" class="btn btn-primary mr-2 ml-2 mb-2" disabled>Seleccionar</button>
                                         </div>
                                     </div>
                                 </div>

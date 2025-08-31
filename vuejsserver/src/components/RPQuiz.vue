@@ -22,7 +22,7 @@
                                                 Spieler
                                                 auf unserem Server spielen, müssen wir kurz deine Eignung zum Thema Roleplay und unserem Server prüfen.
                                                 Solltest du weitere Informationen benötigen, findest du diese bei uns im Forum oder im Discord (https://nemesus-world.de). Bitte
-                                                beantworte die unteren Fragen, du musst min. <b style="color:green;font-family: 'Exo', sans-serif;">70%</b> korrekt beantworten!</h6>
+                                                responde las siguientes preguntas, du musst min. <b style="color:green;font-family: 'Exo', sans-serif;">70%</b> responder correctamente!</h6>
                                         </div>
                                         <b style="color:yellow">Ihr wollt die Entwicklung dieses Gamemodes unterstützen? Dann lasst mir gerne ein kleines Trinkgeld da: https://trinkgeld.nemesus.de</b>
                                         <hr />
@@ -83,7 +83,7 @@
                                                 einen theoretischen sowie einen praktischen Teil absolvieren.
                                                 Solltest du weitere Informationen benötigen, findest du diese hinten in unserer Infoecke (( Forum/Discord )).
                                                 Für den theoretischen Teil, werde ich dir gleich ein paar Fragen stellen, versuche diese
-                                                korrekt zu beantworten du musst mind. <b style="color:green;font-family: 'Exo', sans-serif;">70%</b> korrekt beantworten!</h6>
+                                                korrekt zu beantworten du musst mind. <b style="color:green;font-family: 'Exo', sans-serif;">70%</b> responder correctamente!</h6>
                                         </div>
                                         <b style="color:yellow">Oben bleiben ist nicht alles, heil runter kommen ist wichtiger!</b>
                                         <hr />
@@ -144,7 +144,7 @@
                                                 einen theoretischen sowie einen praktischen Teil absolvieren.
                                                 Solltest du weitere Informationen benötigen, findest du diese hinten in unserer Infoecke (( Forum/Discord )).
                                                 Für den theoretischen Teil, werde ich dir gleich ein paar Fragen stellen, versuche diese
-                                                korrekt zu beantworten du musst mind. <b style="color:green;font-family: 'Exo', sans-serif;">70%</b> korrekt beantworten!</h6>
+                                                korrekt zu beantworten du musst mind. <b style="color:green;font-family: 'Exo', sans-serif;">70%</b> responder correctamente!</h6>
                                         </div>
                                         <b style="color:yellow">Mast- und Schotbruch!</b>
                                         <hr />
@@ -205,7 +205,7 @@
                                                 einen theoretischen sowie einen praktischen Teil absolvieren.
                                                 Solltest du weitere Informationen benötigen, findest du diese hinten in unserer Infoecke (( Forum/Discord )).
                                                 Für den theoretischen Teil, werde ich dir gleich ein paar Fragen stellen, versuche diese
-                                                korrekt zu beantworten du musst mind. <b style="color:green;font-family: 'Exo', sans-serif;">70%</b> korrekt beantworten!</h6>
+                                                korrekt zu beantworten du musst mind. <b style="color:green;font-family: 'Exo', sans-serif;">70%</b> responder correctamente!</h6>
                                         </div>
                                         <b style="color:yellow">Wenn Du glaubst, alles unter Kontrolle zu haben, fährst Du zu langsam!</b>
                                         <hr />
@@ -266,7 +266,7 @@
                                                 einen theoretischen sowie einen praktischen Teil absolvieren.
                                                 Solltest du weitere Informationen benötigen, findest du diese hinten in unserer Infoecke (( Forum/Discord )).
                                                 Für den theoretischen Teil, werde ich dir gleich ein paar Fragen stellen, versuche diese
-                                                korrekt zu beantworten du musst mind. <b style="color:green;font-family: 'Exo', sans-serif;">70%</b> korrekt beantworten!</h6>
+                                                korrekt zu beantworten du musst mind. <b style="color:green;font-family: 'Exo', sans-serif;">70%</b> responder correctamente!</h6>
                                         </div>
                                         <b style="color:yellow">Wenn Du glaubst, alles unter Kontrolle zu haben, fährst Du zu langsam!</b>
                                         <hr />
@@ -327,7 +327,7 @@
                                                 einen theoretischen sowie einen praktischen Teil absolvieren.
                                                 Solltest du weitere Informationen benötigen, findest du diese hinten in unserer Infoecke (( Forum/Discord )).
                                                 Für den theoretischen Teil, werde ich dir gleich ein paar Fragen stellen, versuche diese
-                                                korrekt zu beantworten du musst mind. <b style="color:green;font-family: 'Exo', sans-serif;">70%</b> korrekt beantworten!</h6>
+                                                korrekt zu beantworten du musst mind. <b style="color:green;font-family: 'Exo', sans-serif;">70%</b> responder correctamente!</h6>
                                         </div>
                                         <b style="color:yellow">Drive safe someone loves you!</b>
                                         <hr />
@@ -388,7 +388,7 @@
                                                 einen theoretischen sowie einen praktischen Teil absolvieren.
                                                 Solltest du weitere Informationen benötigen, findest du diese hinten in unserer Infoecke (( Forum/Discord )).
                                                 Für den theoretischen Teil, werde ich dir gleich ein paar Fragen stellen, versuche diese
-                                                korrekt zu beantworten du musst mind. <b style="color:green;font-family: 'Exo', sans-serif;">70%</b> korrekt beantworten!</h6>
+                                                korrekt zu beantworten du musst mind. <b style="color:green;font-family: 'Exo', sans-serif;">70%</b> responder correctamente!</h6>
                                         </div>
                                         <b style="color:yellow">Nicht Waffen töten Menschen, sondern Menschen!</b>
                                         <hr />
